@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_child_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txvCardType"
+                style="@style/AppTheme.TextView" />
+
+            <TextView
+                android:id="@+id/txvCardNo"
+                style="@style/AppTheme.TextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+
+        <View style="@style/AppTheme.Item.SplitLine" />
+
+        <com.maxcloud.renter.customview.WapListView
+            android:id="@+id/lsvItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+    </LinearLayout>
+</FrameLayout>

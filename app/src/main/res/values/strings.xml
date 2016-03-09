@@ -1,0 +1,215 @@
+<resources>
+    <string name="app_name">迈斯租客</string>
+    <string name="app_copyright">©2014020 迈斯云门禁 Version 30304</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">User Name</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="id_no_digits">0123456789Xx-</string>
+    <string name="phone_no_digits">0123456789-</string>
+    <string name="server_address_digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-_</string>
+    <string name="date_display_format">yyyy-MM-dd</string>
+    <string name="time_display_format">HH:mm:ss</string>
+    <string name="time_short_display_format">HH:mm</string>
+    <string name="feedback_phone_no">0755-83467223</string>
+    <string name="feedback_qq1">2695150385</string>
+    <string name="feedback_qq2">3206650268</string>
+    <integer name="default_open_door_count">6</integer>
+
+    <string name="phone_no">手机号</string>
+    <string name="phone_no_hint">请输入手机号码</string>
+    <string name="phone_no_empty">身份证号不能为空</string>
+    <string name="phone_no_invalid">身份证号格式不正确</string>
+    <string name="password">密码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="new_password">新密码</string>
+    <string name="new_password_hint">请输入新密码</string>
+    <string name="new_password_empty">新密码不能为空</string>
+    <string name="security_code">验证码</string>
+    <string name="security_code_hint">短信验证码</string>
+    <string name="security_code_empty">短信验证码不能为空</string>
+    <string name="security_code_invalid">短信验证码格式不正确</string>
+    <string name="full_name">姓名</string>
+    <string name="full_name_hint">请输入姓名</string>
+    <string name="id_card_no">身份证号</string>
+    <string name="id_card_no_hint">请输入身份证号</string>
+    <string name="id_card_no_empty">身份证号不能为空</string>
+    <string name="id_card_no_invalid">身份证号格式不正确</string>
+    <string name="build">楼栋</string>
+    <string name="build_hint">请选择楼栋</string>
+    <string name="submit">提交</string>
+    <string name="stay_tuned">敬请期待</string>
+
+    <!-- 主界面 -->
+    <string name="main_title">主界面</string>
+
+    <!-- 登录 -->
+    <string name="login_title">登录</string>
+    <string name="login_account">账号</string>
+    <string name="login_account_hint">请输入账号</string>
+    <string name="login_forget_password"><u>忘记密码</u></string>
+    <string name="login_login">登&#160;&#160;&#160;&#160;录</string>
+    <string name="login_logging">正在登录...</string>
+    <string name="login_login_error">登录失败</string>
+
+    <!-- 主页 -->
+    <string name="home_title">主页</string>
+    <string name="home_activation">激活手机开门</string>
+
+    <!-- 缴费 -->
+    <string name="payment_title">缴费</string>
+
+    <!-- 我 -->
+    <string name="my_title">我</string>
+    <string name="my_not_login">未登录</string>
+    <string name="my_change_password">修改密码</string>
+    <string name="my_change_info">修改资料</string>
+    <string name="my_view_info">查看资料</string>
+    <string name="my_bind_card">绑定门禁卡</string>
+    <string name="my_my_child">我的小孩</string>
+    <string name="my_setting">设置</string>
+
+    <!-- 设置界面 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_open_door_quer">开门前确认</string>
+    <string name="setting_create_shortcut">发送快捷方式到桌面</string>
+    <string name="setting_create_shortcut_message">是否在桌面上创建快捷方式？</string>
+    <string name="setting_create_shortcut_yes">我要创建</string>
+    <string name="setting_create_shortcut_no">以后再说</string>
+    <string name="setting_create_shortcut_success">快捷方式创建成功！</string>
+    <string name="setting_check_update">检查更新</string>
+    <string name="setting_feedback_title">意见反馈</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_logout">退出登录</string>
+    <string name="setting_logout_message">退出登录后，当前帐号的缓存数据将会被清空！</string>
+    <string name="setting_logout_no">以后再说</string>
+    <string name="setting_checking_update">正在检查更新…</string>
+    <string name="setting_not_new_update">当前已经是最新版本了</string>
+    <string name="setting_new_update">发现新版本</string>
+    <string name="setting_new_update_tip">发现新版本！本次更新：\n%s</string>
+    <string name="setting_update_yes">现在更新</string>
+    <string name="setting_update_no">以后再说</string>
+
+    <!-- 星座 -->
+    <string name="sign_title">星座</string>
+
+    <!-- 账号 -->
+    <string name="account_get_security_code">获取</string>
+    <string name="account_security_code_send">短信验证码已发送，请注意查收！</string>
+    <string name="account_accept_user_agreement">我已阅读并接受</string>
+    <string name="account_user_agreement">&lt;&lt;迈斯用户协议>></string>
+    <string name="account_sending_security_code">正在发送验证码...</string>
+
+    <!-- 修改密码 -->
+    <string name="change_password_title">修改密码</string>
+    <string name="change_password_submiting">"正在提交...</string>
+
+    <!-- 重置密码 -->
+    <string name="reset_password_title">重置密码</string>
+    <string name="reset_password_submiting">"正在提交...</string>
+
+    <!-- 注册用户 -->
+    <string name="register_account_title">新用户注册</string>
+    <string name="register_password_submiting">"正在提交...</string>
+
+    <!-- 用户协议 -->
+    <string name="user_agreement_title">迈斯用户协议</string>
+
+    <!-- 用户信息 -->
+    <string name="user_info_preview_title">查看资料</string>
+    <string name="user_info_edit_title">编辑资料</string>
+    <string name="user_info_id_card_photo">身份证照</string>
+    <string name="user_info_address">户籍地址</string>
+    <string name="user_info_address_hint">请输入户籍地址</string>
+    <string name="user_info_preview_submit">编辑</string>
+    <string name="user_info_preview_download_id_card_error">更新身份证照片失败</string>
+    <string name="user_info_edit_submit">提交申请</string>
+    <string name="user_info_load_error">加载用户信息失败，%s</string>
+    <string name="user_info_edit_rec_id_card">正在识别身份证...</string>
+
+    <!-- 关于 -->
+    <string name="about_title">关于</string>
+    <string name="about_scan_download">扫我下载APP</string>
+    <string name="about_preview_user_agreement"><u>查看用户协议</u></string>
+    <string name="about_contact_customer_service">联系客服</string>
+
+
+    <!-- 意见反馈 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_tip">欢迎您提出的宝贵意见和建议，您留下的每个字都将用来改善我们的软件。</string>
+    <string name="feedback_text_tip">请输入您的反馈意见（字数500以内）</string>
+    <string name="feedback_tel_tip">请输入您的联系电话</string>
+    <string name="feedback_text_empty_error">反馈意见不能为空</string>
+    <string name="feedback_tel_empty_error">联系电话不能为空</string>
+    <string name="feedback_submiting">"正在提交...</string>
+    <string name="feedback_submit_success">"已收到您的反馈，感谢您对迈斯开门的支持，如有需要，我们会通过电话联系您"</string>
+    <string name="feedback_submit_fail">"您的意见提交失败，请稍后再试"</string>
+
+    <!-- 激活门禁卡 -->
+    <string name="active_card_title">绑定门禁卡</string>
+    <string name="active_card_empty_build">请选择楼栋</string>
+    <string name="active_card_self_card">请刷一张您自己的门禁卡</string>
+    <string name="active_card_loading_build">正在加载楼栋...</string>
+    <string name="active_card_being_active">正在绑定门禁卡...</string>
+    <string name="active_card_success">绑定门禁卡成功</string>
+    <string name="active_card_build_empty">未查询到楼栋</string>
+
+    <!-- 读取卡信息 -->
+    <string name="read_card_title">等待您刷卡</string>
+    <string name="read_card_empty_build_name">指定楼栋</string>
+
+    <!-- 我的小孩 -->
+    <string name="my_child_title">我的小孩</string>
+    <string name="my_child_name">小孩姓名</string>
+    <string name="my_child_loading_child">正在加载小孩信息...</string>
+    <string name="my_child_saving_child">正在提交小孩信息...</string>
+    <string name="my_child_success">提交小孩信息成功</string>
+
+    <!-- 我的消息 -->
+    <string name="my_message_title">消息</string>
+
+    <!-- 欢迎 -->
+    <string name="welcome_title">欢迎</string>
+    <string name="welcome_login"><u>旧用户，我要登录</u></string>
+    <string name="welcome_register">没有账号，我要注册</string>
+    <string name="welcome_connecting">正在连接…</string>
+    <string name="welcome_logging">正在登录&#8230;</string>
+    <string name="welcome_login_fail">登录失败，%s</string>
+    <string name="welcome_init_main_ui">正在初始化&#8230;</string>
+    <string name="welcome_check_version">正在检查版本信息…</string>
+    <string name="welcome_new_update">发现新版本</string>
+    <string name="welcome_new_update_tip">本次更新：\n%s</string>
+    <string name="welcome_updating">正在下载更新包&#8230;</string>
+    <string name="welcome_update_yes">现在更新</string>
+    <string name="welcome_update_no">退出系统</string>
+
+    <!-- 客服 -->
+    <string name="customer_service_title">联系客服</string>
+    <string name="customer_service_phone_no">客服电话：</string>
+    <string name="customer_service_qq">客&#160;&#160;服&#160;&#160;QQ：</string>
+
+    <!-- 网络错误 -->
+    <string name="net_error_408">网络异常(错误码:408)</string>
+    <string name="net_error_other">网络异常(错误码:-1)</string>
+
+    <!-- OCR错误 -->
+    <string name="ocr_boot_error">初始化OCR失败(错误码:%d)</string>
+    <string name="ocr_terminate_error">释放OCR失败(错误码:%d)</string>
+    <string name="ocr_load_image_error">加载图像失败(错误码:%d)</string>
+    <string name="ocr_ocr_error">识别图像失败(错误码:%d)</string>
+    <string name="ocr_free_image_error">释放图像失败(错误码:%d)</string>
+</resources>

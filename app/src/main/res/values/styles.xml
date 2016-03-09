@@ -1,0 +1,199 @@
+<resources>
+
+    <style name="windowTitleBackgroundStyle">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="windowTitleStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="windowAnimationStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_right_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_left_exit</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowTitleSize">40dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/windowTitleBackgroundStyle</item>
+        <item name="android:windowTitleStyle">@style/windowTitleStyle</item>
+        <!--<item name="android:windowAnimationStyle">@style/windowAnimationStyle</item>-->
+    </style>
+
+    <style name="AppTheme.NoTitleBar" parent="AppTheme">
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.SplashScreen" parent="AppTheme.NoTitleBar">
+        <!--<item name="android:windowAnimationStyle">@style/android:Animation</item>-->
+        <item name="android:windowBackground">@mipmap/splash_screen</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.RatingBar.Gold" parent="@android:style/Widget.RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:numStars">5</item>
+        <item name="android:progressDrawable">@drawable/bg_rating_bar_gold</item>
+    </style>
+
+    <!-- 项目分隔线样式 -->
+    <style name="AppTheme.Item.SplitLine" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#55000000</item>
+    </style>
+
+    <!-- 文本框输入项样式 -->
+    <style name="AppTheme.EditText" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 手机号输入项样式 -->
+    <style name="AppTheme.EditText.PhoneNo" parent="@style/AppTheme.EditText">
+        <item name="android:inputType">number</item>
+        <item name="android:digits">@string/phone_no_digits</item>
+        <item name="android:maxLength">13</item>
+    </style>
+
+    <!-- 身份证号输入项样式 -->
+    <style name="AppTheme.EditText.IdCardNo" parent="@style/AppTheme.EditText">
+        <item name="android:digits">@string/id_no_digits</item>
+        <item name="android:maxLength">21</item>
+    </style>
+
+    <!-- 验证码输入项样式 -->
+    <style name="AppTheme.EditText.SecurityCode" parent="@style/AppTheme.EditText.PhoneNo">
+        <item name="android:maxLength">4</item>
+    </style>
+
+    <!-- 姓名输入项样式 -->
+    <style name="AppTheme.EditText.UserName" parent="@style/AppTheme.EditText">
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <!-- 文字显示样式 -->
+    <style name="AppTheme.TextView" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 标注项样式 -->
+    <style name="AppTheme.TextView.Note" parent="AppTheme.TextView">
+        <item name="android:textColor">@color/colorNoteText</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 标注项高亮样式 -->
+    <style name="AppTheme.TextView.Note.Light" parent="AppTheme.TextView.Note">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 数据输入和显示项目标题样式 -->
+    <style name="AppTheme.TextView.ItemTitle" parent="AppTheme.TextView.Note">
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 带图标的项目样式 -->
+    <style name="AppTheme.IconItem" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">@drawable/bg_list_item</item>
+        <item name="android:textColor">@drawable/tc_list_item</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="com.maxcloud.renter:iconBound_bottom">20dp</item>
+        <item name="com.maxcloud.renter:iconBound_right">20dp</item>
+    </style>
+
+    <!-- 数据输入和显示项目样式 -->
+    <style name="AppTheme.Item" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">@drawable/bg_list_item</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 项目跳转图标样式 -->
+    <style name="AppTheme.Item.GoImage" parent="AppTheme">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:src">@mipmap/ic_more_array</item>
+    </style>
+
+    <!-- 普通按钮样式 -->
+    <style name="AppTheme.Button" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/tc_button</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 高亮按钮样式 -->
+    <style name="AppTheme.Button.Light" parent="AppTheme.Button">
+        <item name="android:background">@drawable/bg_button_light</item>
+        <item name="android:textColor">@color/colorNoteText</item>
+    </style>
+
+    <!-- 提交按钮样式 -->
+    <style name="AppTheme.Button.Submit" parent="AppTheme.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 提示小红点样式 -->
+    <style name="AppTheme.Tip.RedDot" parent="AppTheme">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:background">@drawable/oval_red</item>
+    </style>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome"
+    android:orientation="vertical"
+    tools:context="com.maxcloud.renter.activity.user.LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:maxHeight="120dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_max_logo_white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_max_sub_log_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:text="@string/login_account"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edtAccount"
+                style="@style/AppTheme.EditText.PhoneNo"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_login_edit_text"
+                android:hint="@string/login_account_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:text="@string/password"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/AppTheme.EditText"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_login_edit_text"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/ic_login_button"
+            android:text="@string/login_login"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnForgetPasd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/login_forget_password"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txvCopyRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="@string/app_copyright"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

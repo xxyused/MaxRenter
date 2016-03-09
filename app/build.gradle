@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+//    packagingOptions {
+//        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+//        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+//        exclude 'META-INF/maven/com.google.gson/gson/pom.xml'
+//        exclude 'META-INF/maven/com.google.gson/gson/pom.properties'
+//    }
+
+    defaultConfig {
+        applicationId "com.maxcloud.renter"
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        debug {
+            //显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+        }
+        release {
+            //显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources true
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+dependencies {
+    compile 'com.android.support:support-v4:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    //compile 'com.squareup.retrofit2:converter-simplexml:2.0.0-beta3'
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/com.umeng.message.lib_v2.6.0.jar')
+    compile files('libs/umeng-analytics-v5.6.4.jar')
+    compile files('libs/gson-2.5.jar')
+    compile files('libs/okhttp-3.0.0-RC1.jar')
+    compile files('libs/retrofit-2.0.0-beta3.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/glide-3.5.2.jar')
+    compile files('libs/locSDK_6.22.jar')
+    compile files('libs/oss-android-sdk-1.1.0.jar')
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="text" format="reference|string" />
+    <attr name="textSize" format="reference|dimension|integer" />
+    <attr name="textColor" format="reference|integer" />
+    <attr name="hint" format="reference|string" />
+    <attr name="hintColor" format="reference|integer" />
+
+    <declare-styleable name="ImageTextView">
+        <attr name="iconBound_left" format="reference|dimension|integer" />
+        <attr name="iconBound_top" format="reference|dimension|integer" />
+        <attr name="iconBound_right" format="reference|dimension|integer" />
+        <attr name="iconBound_bottom" format="reference|dimension|integer" />
+    </declare-styleable>
+    <declare-styleable name="ScrollViewPager">
+        <attr name="canScroll" format="reference|boolean" />
+    </declare-styleable>
+</resources>

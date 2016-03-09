@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_welcome"
+    android:orientation="vertical"
+    tools:context="com.maxcloud.renter.activity.home.WelcomeActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:maxHeight="120dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_max_logo_white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_max_sub_log_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:id="@+id/txvTip"
+            style="@style/AppTheme.TextView.ItemTitle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/welcome_check_version"
+            android:textColor="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/prbUpdate"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_button_register_from_welcome"
+            android:text="@string/welcome_register"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="#00FFFFFF"
+            android:padding="5dp"
+            android:text="@string/welcome_login"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txvCopyRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="@string/app_copyright"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

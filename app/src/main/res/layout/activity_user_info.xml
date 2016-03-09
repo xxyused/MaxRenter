@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            style="@style/AppTheme.Item"
+            android:layout_height="120dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:layout_gravity="top"
+                android:ems="4"
+                android:text="@string/user_info_id_card_photo" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <FrameLayout
+                    android:layout_width="160dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/imgIdCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_gray_dot" />
+
+                    <LinearLayout
+                        android:id="@+id/imgIdCardTip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/ic_add_photo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="身份证正面照"
+                            android:textColor="@color/colorNoteText" />
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/btnReaddIdImg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_readd_photo" />
+
+                <TextView
+                    style="@style/AppTheme.TextView.Note"
+                    android:layout_gravity="center_horizontal"
+                    android:text="点击重拍" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txvIdCardTip"
+            style="@style/AppTheme.TextView.Note"
+            android:layout_gravity="right"
+            android:text="注：身份证照片仅用于识别，不会泄漏！"
+            android:visibility="gone" />
+
+        <LinearLayout
+            style="@style/AppTheme.Item"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:ems="4"
+                android:text="@string/full_name" />
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/AppTheme.EditText.UserName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <View style="@style/AppTheme.Item.SplitLine" />
+
+        <LinearLayout style="@style/AppTheme.Item">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:ems="4"
+                android:text="@string/id_card_no" />
+
+            <EditText
+                android:id="@+id/edtIdNo"
+                style="@style/AppTheme.EditText.IdCardNo"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <View style="@style/AppTheme.Item.SplitLine" />
+
+        <LinearLayout
+            style="@style/AppTheme.Item"
+            android:layout_height="90dp">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:ems="4"
+                android:text="@string/user_info_address" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                style="@style/AppTheme.EditText"
+                android:layout_height="70dp"
+                android:enabled="false"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/AppTheme.Button.Submit"
+            android:text="@string/user_info_preview_submit" />
+    </LinearLayout>
+
+</ScrollView>

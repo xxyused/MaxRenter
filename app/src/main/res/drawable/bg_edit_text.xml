@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="@color/white" />
+
+            <padding android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="@color/white" />
+
+            <padding android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp" />
+
+            <stroke android:width="0.5dp" android:color="@color/colorPrimary" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="@color/white" />
+
+            <padding android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp" />
+
+            <stroke android:width="0.5dp" android:color="@color/colorPrimary" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="@color/white" />
+
+            <padding android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp" />
+
+            <stroke android:width="0.5dp" android:color="@color/colorNoteText" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    tools:context=".activity.build.ActiveCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/AppTheme.Item">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:ems="4"
+                android:text="身份证号" />
+
+            <EditText
+                android:id="@+id/edtIdCardNo"
+                style="@style/AppTheme.EditText.IdCardNo"
+                android:hint="@string/id_card_no_hint" />
+        </LinearLayout>
+
+        <View style="@style/AppTheme.Item.SplitLine" />
+
+        <LinearLayout
+            android:id="@+id/btnSelectBuild"
+            style="@style/AppTheme.Item">
+
+            <TextView
+                style="@style/AppTheme.TextView.ItemTitle"
+                android:ems="4"
+                android:text="@string/build" />
+
+            <TextView
+                android:id="@+id/txvBuild"
+                style="@style/AppTheme.TextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/build_hint" />
+
+            <ImageView
+                style="@style/AppTheme.Item.GoImage"
+                android:layout_marginRight="0dp" />
+        </LinearLayout>
+
+        <View style="@style/AppTheme.Item.SplitLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/AppTheme.TextView.ItemTitle"
+                            android:ems="5"
+                            android:text="卡类型" />
+
+                        <TextView
+                            android:id="@+id/txvCardType"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:hint="IC卡" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            style="@style/AppTheme.TextView.ItemTitle"
+                            android:ems="5"
+                            android:text="刷卡时间" />
+
+                        <TextView
+                            android:id="@+id/txvCardTime"
+                            style="@style/AppTheme.TextView"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnDeleteCard"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_list_item"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tipAddCard"
+                style="@style/AppTheme.Item"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_add_card" />
+
+                <TextView
+                    style="@style/AppTheme.TextView.Note"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="点击刷卡" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/AppTheme.Button.Submit"
+            android:enabled="false"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+</ScrollView>

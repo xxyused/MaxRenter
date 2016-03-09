@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maxcloud.renter.activity.setting.FeedbackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.TextView.ItemTitle"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:text="@string/feedback_tip" />
+
+        <FrameLayout
+            style="@style/AppTheme.Item"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edtText"
+                style="@style/AppTheme.EditText"
+                android:layout_height="200dp"
+                android:background="#00FFFFFF"
+                android:gravity="top"
+                android:hint="@string/feedback_text_tip"
+                android:maxLength="500" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/AppTheme.Item"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edtTel"
+                style="@style/AppTheme.EditText"
+                android:background="#00FFFFFF"
+                android:hint="@string/feedback_tel_tip"
+                android:maxLength="20" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/AppTheme.Button.Submit"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+</ScrollView>
